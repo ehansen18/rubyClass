@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<%=$HomeUrl ="http://potato-radical-3001.codio.io"%>
+
+
+<html>
+  <head>
+    <title><%= yield(:title) %></title>
+    <h1 style="text-align:center;">Emily's Assignment 4</h1>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
